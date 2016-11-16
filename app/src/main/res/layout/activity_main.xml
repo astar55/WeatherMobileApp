@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bluemoon.weather.MainActivity"
+    android:background="@color/scheme4">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        card_view:cardElevation="10dp"
+        card_view:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edge_layout">
+
+            <TextView android:id="@+id/main_form_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="32sp"
+                android:textColor="@color/scheme1"
+                android:background="@drawable/rounded_edge_title"
+                android:elevation="5dp"/>
+
+            <EditText android:id="@+id/main_form_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="5"
+                android:layout_below="@id/main_form_title"
+                android:textColor="@color/scheme2"
+                android:hint="@string/hint"
+                android:textColorHint="@color/scheme2"
+                android:elevation="2dp"
+                android:text=""
+                android:textAlignment="center"/>
+
+            <Button android:id="@+id/main_form_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_form_input"
+                android:text="@string/submit_btn"
+                android:textColor="@color/scheme2"
+                android:elevation="5dp"
+                android:backgroundTint="@color/scheme4"
+                android:shadowColor="@color/scheme5"
+                android:shadowDy="3"
+                android:shadowDx="5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

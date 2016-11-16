@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="submit_btn">Submit</string>
+    <string name="loading">Loading...</string>
+    <string name="current">Current Condition</string>
+    <string name="fiveday">5-Day Forecast</string>
+    <string name="day">Day</string>
+    <string name="description">Description</string>
+    <string name="highlow">High/Low</string>
+    <string name="precip">Precip</string>
+    <string name="humidity">Humidity</string>
+    <string name="tonight">Tonight</string>
+    <string name="condition">Weather Condition</string>
+    <string name="hint">Enter Zip Code</string>
+</resources>
